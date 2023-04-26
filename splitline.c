@@ -8,9 +8,8 @@ void parse_command(char *command, char **args)
 	token = strtok(command, TOK_DELIM);
 	while (token != NULL)
 	{
-		args[i] = token;
+		args[i++] = token;
 		token = strtok(NULL, TOK_DELIM);
-		i++;
 	}
 	args[i] = NULL;
 }
