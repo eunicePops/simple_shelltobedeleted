@@ -3,6 +3,7 @@
 int launch(char **args)
 {
 	pid_t pid;
+	int status;
 
 	pid = fork();
 	if (pid < 0)
@@ -20,7 +21,7 @@ int launch(char **args)
 	}
 	else
 	{
-		wait(NULL);
+		waitpid(pid, &status, 0);
 	}
 
 	return (1);
