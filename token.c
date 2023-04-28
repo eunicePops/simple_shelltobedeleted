@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 
 /**
  * my_strtok - this helps split a string into words. delimiters that are 
