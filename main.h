@@ -42,4 +42,7 @@ int sh_unsetenv(char **args);
 
 int (*get_function(char *s))(char **args);
 
+
+int is_delim(char, char *);
+
 #endif
